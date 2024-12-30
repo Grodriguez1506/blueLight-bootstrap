@@ -21,15 +21,15 @@ window.addEventListener('load', () => {
 
     console.log(currentPath);
 
-    if (currentPath == '/index.html' || currentPath == '/') {
+    if (currentPath == '/blueLight-bootstrap/index.html' || currentPath == '/blueLight-bootstrap/') {
         homeMenu.classList.add('active');
         clientsMenu.classList.remove('active');
         contactMenu.classList.remove('active');
-    } else if (currentPath == '/clients.html') {
+    } else if (currentPath == '/blueLight-bootstrap/clients.html') {
         homeMenu.classList.remove('active');
         clientsMenu.classList.add('active');
         contactMenu.classList.remove('active');
-    } else if (currentPath == '/contact.html') {
+    } else if (currentPath == '/blueLight-bootstrap/contact.html') {
         homeMenu.classList.remove('active');
         clientsMenu.classList.remove('active');
         contactMenu.classList.add('active');
