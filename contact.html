@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- CUSTOM JS -->
+    <script src="./js/main.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- FAVICON -->
+    <link rel="icon" href="./images/innovation_11875159.png" type="x-icon">
+</head>
+
+<body>
+    <nav class="navbar bg-primary navbar-expand-lg sm-12" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">BlueLight</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item home">
+                        <a class="nav-link homeMenu" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item clients">
+                        <a class="nav-link clientsMenu" href="./clients.html">Clientes</a>
+                    </li>
+                    <li class="nav-item contact">
+                        <a class="nav-link contactMenu" href="./contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="alert alert-danger my-2" role="alert" style="display: none;">
+            Todos los campos deben estar diligenciados
+        </div>
+        <div class="alert alert-success my-2" role="alert" style="display: none;">
+            La solicitud de contacto ha sido enviada con éxito
+        </div>
+        <div class="row my-3">
+            <h1 class="text-center">Contáctanos</h1>
+        </div>
+        <form>
+            <p>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control name-input" id="floatingInput" placeholder="Nombre completo">
+                <label for="floatingInput">Nombre completo</label>
+            </div>
+            </p>
+            <p>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control email-input" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Correo electrónico</label>
+            </div>
+            </p>
+            <p>
+            <div class="form-floating">
+                <input type="text" class="form-control city-input" id="floatingInput" placeholder="Ciudad">
+                <label for="floatingPassword">Ciudad</label>
+            </div>
+            </p>
+            <p>
+            <div class="form-floating">
+                <input type="text" class="form-control rubro-input" id="floatingInput" placeholder="Rubro">
+                <label for="floatingPassword">Rubro</label>
+            </div>
+            </p>
+            <p>
+            <div class="form-floating">
+                <textarea class="form-control query-input" placeholder="Escribe tu solicitud" id="floatingTextarea2"
+                    style="height: 150px; resize: none;"></textarea>
+                <label for="floatingTextarea2">Escribe tu solictud</label>
+            </div>
+            </p>
+            <div class="d-grid gap-4">
+                <button class="btn btn-primary fs-5" id="sendContact">Enviar</button>
+                <button class="btn btn-danger fs-5">Limpiar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
