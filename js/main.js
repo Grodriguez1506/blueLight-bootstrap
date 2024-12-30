@@ -19,23 +19,18 @@ window.addEventListener('load', () => {
 
     const currentPath = window.location.pathname;
 
-    console.log(currentPath);
-
     if (currentPath == '/blueLight-bootstrap/index.html' || currentPath == '/blueLight-bootstrap/') {
         homeMenu.classList.add('active');
         clientsMenu.classList.remove('active');
         contactMenu.classList.remove('active');
-        console.log('working');
     } else if (currentPath == '/blueLight-bootstrap/clients.html') {
         homeMenu.classList.remove('active');
         clientsMenu.classList.add('active');
         contactMenu.classList.remove('active');
-        console.log('working');
     } else if (currentPath == '/blueLight-bootstrap/contact.html') {
         homeMenu.classList.remove('active');
         clientsMenu.classList.remove('active');
         contactMenu.classList.add('active');
-        console.log('working');
     };
 
     if (addBtn){
