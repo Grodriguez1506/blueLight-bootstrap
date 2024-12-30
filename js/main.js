@@ -19,6 +19,8 @@ window.addEventListener('load', () => {
 
     const currentPath = window.location.pathname;
 
+    console.log(currentPath);
+
     if (currentPath == '/index.html' || currentPath == '/') {
         homeMenu.classList.add('active');
         clientsMenu.classList.remove('active');
